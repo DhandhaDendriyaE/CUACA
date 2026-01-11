@@ -1,3 +1,4 @@
+
 export default function WeatherDisplay({ data }) {
   if (!data) return null;
 
