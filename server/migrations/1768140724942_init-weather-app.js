@@ -1,3 +1,4 @@
+
 exports.up = (pgm) => {
   // Tabel admins
   pgm.createTable('admins', {
