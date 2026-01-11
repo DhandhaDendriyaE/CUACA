@@ -1,3 +1,4 @@
+
 const express = require('express');
 const { getWeatherByLocation } = require('../controllers/weatherController');
 
