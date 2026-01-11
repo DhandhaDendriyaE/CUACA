@@ -1,3 +1,4 @@
+
 const { getWeather3Days } = require('../services/weatherService');
 
 exports.getWeatherByLocation = async (req, res) => {
