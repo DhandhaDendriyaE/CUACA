@@ -1,3 +1,4 @@
+// src/routes/adminRoutes.js
 const express = require('express');
 const { 
   getAllPengunjung, 
@@ -8,10 +9,12 @@ const { verifyAdmin } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-// Semua route di bawah ini dilindungi
+// Semua route dilindungi
 router.use(verifyAdmin);
 
-router.get('/pengunjung', getAllPengunjung);
+// ✅ Endpoint untuk daftar pengunjung
+router.get('/pengunjung', getAllPengunjung); // ← INI HARUS ADA!
+
 router.put('/pengunjung/:id', updatePengunjung);
 router.delete('/pengunjung/:id', deletePengunjung);
 

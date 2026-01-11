@@ -2,7 +2,10 @@
 
 const API_BASE = 'http://localhost:5000/api';
 
-// ✅ Fungsi login pengunjung
+export const logout = () => {
+  localStorage.removeItem('token');
+  localStorage.removeItem('userRole');
+};
 export const loginPengunjung = async (email, password) => {
   const res = await fetch(`${API_BASE}/auth/login`, {
     method: 'POST',

@@ -80,13 +80,21 @@ export default function LoginAdmin() {
           <p style={{ margin: 0, color: '#757575' }}>
             ⚠️ Akses khusus admin terverifikasi
           </p>
+          
+          {/* ✅ TOMBOL KEMBALI KE LOGIN PENGUNJUNG */}
+          <button
+            onClick={() => navigate('/login/pengunjung')}
+            style={styles.backButton}
+          >
+            ← Kembali ke Login Pengunjung
+          </button>
         </div>
       </div>
     </div>
   );
 }
 
-// Styling (sama seperti sebelumnya)
+// Styling (diperluas dengan backButton)
 const styles = {
   container: {
     minHeight: '100vh',
@@ -145,5 +153,20 @@ const styles = {
     marginTop: '24px',
     paddingTop: '20px',
     borderTop: '1px solid #E0E0E0'
+  },
+  backButton: {
+    marginTop: '20px',
+    padding: '10px 16px',
+    background: 'none',
+    border: '1px solid #81C784',
+    borderRadius: '8px',
+    color: '#1B5E20',
+    cursor: 'pointer',
+    fontSize: '14px',
+    fontWeight: '600',
+    transition: 'all 0.2s',
+    ':hover': {
+      background: '#E8F5E9'
+    }
   }
 };
