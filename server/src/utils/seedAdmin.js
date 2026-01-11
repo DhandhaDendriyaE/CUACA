@@ -1,3 +1,4 @@
+
 // server/src/utils/seedAdmin.js
 const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
