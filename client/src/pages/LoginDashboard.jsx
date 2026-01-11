@@ -1,3 +1,4 @@
+
 // src/pages/WeatherDashboard.jsx
 import { useState, useEffect } from 'react';
 import LocationSearch from '../components/LocationSearch';
