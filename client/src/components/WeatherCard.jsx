@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 export default function WeatherCard({ data, city, country, selectedDayIndex, onSelectDay, totalDays }) {
